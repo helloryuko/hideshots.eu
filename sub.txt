@@ -1,3 +1,5 @@
+# ryukohk VPN - learn more @ https://t.me/ryukohk/6423 or https://hideshots.eu
+
 vless://4092af71-0563-46bb-8206-0b8b3628fa65@de1.hideshots.eu:25535?security=reality&sni=google.com&alpn=h1&fp=chrome&pbk=822MUI8u4eHIy4GzIeYZZsc7_-OS8Iyo6zsf15JXiQ0&sid=958aba1bb60baa46&type=tcp&flow=xtls-rprx-vision&encryption=none#1%20%F0%9F%87%A9%F0%9F%87%AA%20VLess%20(@ryukohk)
 hy2://t.me%2Fryukohk@de1.hideshots.eu:8003?obfs=salamander&obfs-password=decadance#1%20%F0%9F%87%A9%F0%9F%87%AA%20Hysteria2%20(@ryukohk)
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptT3M0QnQ0cmp1ancza2tqNHdQTkl4@de1.hideshots.eu:33755#1%20%F0%9F%87%A9%F0%9F%87%AA%20Shadowsocks%20(@ryukohk)
