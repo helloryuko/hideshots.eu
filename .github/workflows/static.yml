@@ -36,15 +36,11 @@ jobs:
       - name: HTML/CSS/JS Minifier
         uses: docker://devatherock/minify-js:3.1.0
         with:
-          output: 'minified'  # Optional
           add_suffix: false
-          inclusions: |- 
-            index.html
-            sub.txt
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './minified'
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
