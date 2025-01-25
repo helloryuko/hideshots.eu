@@ -21,10 +21,10 @@
 
             const parts = decodeURI(url).split('#');
 
-            const nameNode = document.createElement('h2')
+            const nameNode = document.createElement('h2');
             nameNode.innerText = parts[1];
 
-            const urlNode = document.createElement('p')
+            const urlNode = document.createElement('p');
             urlNode.innerText = url;
             urlNode.setAttribute('onclick', 'copyElem(this)');
             urlNode.setAttribute('class', 'clickable');
@@ -34,8 +34,6 @@
             subsElem.insertAdjacentElement('afterbegin', document.createElement('br'));
         }
     });
-
-    console.log(globalThis.subs);
 </script>
 
 <head>
@@ -52,8 +50,8 @@
 
         <div class="content">
             <p>
-                <h2>subscription</h2>
-                <p class="clickable" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
+            <h2>subscription</h2>
+            <p class="clickable" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
             </p>
             <p id="subs">
             </p>
