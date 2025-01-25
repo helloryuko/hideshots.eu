@@ -11,7 +11,7 @@
 
     fetch('/sub.txt').then(response => response.text()).then(subscription => {
         const subsElem = document.getElementById('subs');
-        const urls = subscription.split('\r\n');
+        const urls = subscription.replace('\r', '').split('\n');
 
         for (let i = 0; i < urls.length; i++) {
             const url = urls[i];
