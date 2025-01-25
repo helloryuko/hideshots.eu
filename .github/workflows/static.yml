@@ -38,7 +38,7 @@ jobs:
         with:
           output: 'minified'  # Optional
           add_suffix: false
-          inclusions:
+          inclusions: |- 
             index.html
             sub.txt
       - name: Upload artifact
