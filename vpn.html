@@ -17,7 +17,7 @@
             const url = urls[i];
 
             if (url.startsWith('#')) continue;
-            if (url.length === 0) continue;
+            if (url.length <= 1) continue;
 
             const parts = decodeURI(url).split('#');
 
@@ -29,9 +29,9 @@
             urlNode.setAttribute('onclick', 'copyElem(this)');
             urlNode.setAttribute('class', 'clickable');
 
-            subsElem.insertAdjacentElement('afterbegin', urlNode);
-            subsElem.insertAdjacentElement('afterbegin', nameNode);
-            subsElem.insertAdjacentElement('afterbegin', document.createElement('br'));
+            subsElem.insertAdjacentElement('beforeend', document.createElement('br'));
+            subsElem.insertAdjacentElement('beforeend', nameNode);
+            subsElem.insertAdjacentElement('beforeend', urlNode);
         }
     });
 </script>
@@ -48,15 +48,13 @@
         <a href="/">back</a>
         <h1>vpn</h1>
         <p>click to copy</p>
-        <h1><br></h1>
 
         <div class="content">
-            <p>
-            <h2>subscription</h2>
-            <p class="clickable" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
-            </p>
-            <p id="subs">
-            </p>
+            <div id="subs">
+                <br>
+                <h2>subscription</h2>
+                <p class="clickable" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
+                </p>
+            </div>
         </div>
-    </div>
 </body>
