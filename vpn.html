@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <script>
     function copyElem(elem) {
-        const origText = elem.innerText;
-        navigator.clipboard.writeText(origText);
+        const originalText = elem.innerText;
+
+        navigator.clipboard.writeText(originalText);
         elem.innerText = 'copied!';
+
         setTimeout(() => {
-            elem.innerText = origText;
+            elem.innerText = originalText;
         }, 1000);
     }
 
@@ -27,7 +29,7 @@
             const urlNode = document.createElement('p');
             urlNode.innerText = url;
             urlNode.setAttribute('onclick', 'copyElem(this)');
-            urlNode.setAttribute('class', 'clickable');
+            urlNode.setAttribute('class', 'link');
 
             subsElem.insertAdjacentElement('beforeend', document.createElement('br'));
             subsElem.insertAdjacentElement('beforeend', nameNode);
@@ -53,8 +55,7 @@
             <div id="subs">
                 <br>
                 <h2>subscription</h2>
-                <p class="clickable" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
-                </p>
+                <p class="link" onclick="copyElem(this)">https://hideshots.eu/sub.txt</p>
             </div>
         </div>
 </body>
